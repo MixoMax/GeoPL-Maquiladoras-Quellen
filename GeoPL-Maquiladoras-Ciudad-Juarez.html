@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://static.linus-minus-sinus.org/www/colors.css">
+</head>
+<body>
+    <script>
+        const project_name = "GeoPL Maquiladoras Ciudad Juárez";
+        document.title = project_name + " - Sources";
+
+        const sources = [ // (label, claim, text, url
+            [
+                "Q1",
+                "Seit 1930er Jahre werden in Mexiko Import Subventioniert um die Wirtschaft anzukurbeln",
+                "Mexico's Industrialization During the Great Depression: Public Policy and Private Response (jstor.org)",
+                "https://www.jstor.org/stable/2120735"
+            ],
+            [
+                "Q2",
+                "Seit 1994 NAFTA Abkommen -> kein Zoll zwischen Kanada, USA und Mexiko",
+                "North American Free Trade Agreement (britannica.com)",
+                "https://www.britannica.com/event/North-American-Free-Trade-Agreement"
+            ],
+            [
+                "Q3",
+                "2020 NAFTA durch USMCA ersetzt",
+                "United States-Mexico-Canada Agreement (ustr.gov)",
+                "https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement"
+            ],
+            [
+                "Q4",
+                "Seit July 2018 25% Einfuhrzölle auf verschiedene Chinesische Waren",
+                "Harmonized Tariff Schedule of the United States Revision 4 (hts.usitc.gov)",
+                "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2099#page=481"
+            ],
+            [
+                "Q5",
+                "Ciudad Juárez hat 1.5 Millionen Einwohner",
+                "Data México - Ciudad Juárez (economia.gob.mx)",
+                "https://www.economia.gob.mx/datamexico/en/profile/geo/juarez-99804"
+            ],
+            [
+                "Q6",
+                "trocken arides Klima (BWk) in Ciudad Juárez",
+                "Daten und Graphen zum Klima und Wetterin Ciudad Juárez (climate-data.org)",
+                "https://de.climate-data.org/nordamerika/mexiko/chihuahua/ciudad-juarez-5300/"
+            ],
+            [
+                "Q7",
+                "Maquiladoras: - Großteilig Zoll- und Abgabenfrei, von ausländischen Firmen gebaut und operiert, Mexko 'stellt' nur Arbeiter und Infrastruktur, als Alternative zur Zusammenarbeit mit lokalen Firmen",
+                "Infoblatt Maquiladoras (klett.de)",
+                "https://static.klett.de/assets/terrasse/Maquiladoras.pdf"
+            ],
+            [
+                "Q8",
+                "Durch Zoll auf Chinesische Produkte ist es günstiger in Mexiko zu produzieren",
+                "How Mexico is Becoming the New China (youtube.com)",
+                "https://www.youtube.com/watch?v=GXT46osICdY"
+            ],
+            [
+                "Q9",
+                "Viele US-Amerikanische und internationale Firmen bauen Produktionsstätten in Mexiko auf, darunter: Tesla, Lenovo, General Motors, BMW, Nissan, Ford",
+                "Near-Shoring: Can Manufacturing Move From China To Mexico? (forbes.com)",
+                "https://www.forbes.com/sites/billconerly/2023/04/14/near-shoring-can-manufacturing-move-from-china-to-mexico/"
+            ],
+            [
+                "Q10",
+                "Ökonomen bewerten Mexikos aktuelle Lage als ähnlich zu der Chinas vor 40 Jahren",
+                "How Mexico is Becoming the New China (youtube.com)",
+                "https://www.youtube.com/watch?v=GXT46osICdY"
+            ],
+            [
+                "Q11",
+                "6.60 USD/h Lohn, Lange Arbeitszeiten, häufig unbezahlte Überstunden, keine Gewerksschaften, sehr schlechte Arbeitnehmerrechte",
+                "'Maquiladora Downturn: Structural Change Or Cyclical Factors?' von Jesus Cañas und Roberto Coronado, Federal Reserve Bank of Dallas (researchgate.net)",
+                "https://www.researchgate.net/publication/5029699_Maquiladora_Downturn_Structural_Change_Or_Cyclical_Factors"
+            ],
+            [
+                "60% bis 90% der Arbeiter in den Maquiladoras sind Frauen",
+                "'Mexico's Maquiladoras: Abuses Against Women Workers', human rights watch (hrw.org)",
+                "https://www.hrw.org/news/1996/08/17/mexicos-maquiladoras-abuses-against-women-workers"
+            ],
+            [
+                "Q13",
+                "Keine Chancen auf besser bezahlte Positionen",
+                "'Die mexikanische Maquila als soziales Verhältnis der Produktion: Zur Konsitution eines politischen Subjekts', Masterarbeit von Stephanie Graf, Universität Wien (phaidra.univie.ac.at)",
+                "https://services.phaidra.univie.ac.at/api/object/o:1278370/get"
+            ],
+            [
+                "Q14",
+                "Arbeiter sind Abhängig von den Maquiladoras, da es keine anderen Arbeitsmöglichkeiten gibt",
+                "Interview mit einer Arbeiterin in einer Maquiladora in Ciudad Juárez, AFP Éspanol (youtube.com)",
+                "https://www.youtube.com/watch?v=fakAR5kyDJc"
+            ],
+            [
+                "Q15",
+                "Gesundheitliche Probleme durch aussetzung zu Chemikalien und schlechte Arbeitsbedingungen",
+                "'Inside Mexico's Maquiladoras: Manufacturing Health Disparities' von Stephanie Navarro, Stanford University (med.stanford.edu)",
+                "https://med.stanford.edu/content/dam/sm/schoolhealtheval/documents/StephanieNavarro_HumBio122MFinal.pdf"
+            ],
+            [
+                "16",
+                "Maquiladoras sind ausgenommen von Umweltgesetzen",
+                "'The Mexican Maquila Industry and the Environment; An Overview of the Issues' von Per Stromberg, UN Industrial Development Unit ECLAC/Mexico (repositorio.cepal.org)",
+                "https://repositorio.cepal.org/server/api/core/bitstreams/55f65a81-b9ce-4e66-ae61-f8dedc9ecfd5/content"
+            ],
+            [
+                "Q17",
+                "Einsparung von Schiffartswegen durch Produktion in Mexiko",
+                "How Mexico is Becoming the New China (youtube.com)",
+                "https://www.youtube.com/watch?v=GXT46osICdY"
+            ],
+            [
+                "Q18",
+                "Mexiko gilt als eines der Gewalttätigsten Länder der Welt",
+                "OECD Better Life Index: Safety (oecdbetterlifeindex.org)",
+                "https://www.oecdbetterlifeindex.org/topics/safety/"
+            ],
+            [
+                "Q19",
+                "Knapp ein drittel der Beschäftigten in Maquiladoras sind in Ciudad Juárez gelegen | Maquiladoras machen 60% des BIPs von Ciudad Juárez aus",
+                "Ciudad Juárez: The Heart of Mexico's Maquila Industry (americanindustriesgroup.com)",
+                "https://www.americanindustriesgroup.com/blog/ciudad-juarez-heart-mexico-maquila-industry/"
+            ],
+            [
+                "Q20",
+                "Mit 'Paso del Norte' einer der wichtigsten Grenzübergänge in Ciudad Juárez",
+                "Paso del Norte Border Crossing (pdnuno.com)",
+                "https://pdnuno.com/border-crossings/paso-del-norte"
+            ],
+            [
+                "Q21",
+                "einer von 6 Eisenbahnübergängen in Ciudad Juárez",
+                "Union Pacific de Mexico (up.com)",
+                "https://www.up.com/customers/premium/de-mex/index.htm"
+            ],
+            // Maps
+            // divider
+            [
+                "",
+                "Karten",
+                "",
+                ""
+            ],
+            [
+                "K1",
+                "",
+                "OpenStreetMap Karte von Ciudad Juárez, verändert",
+                "https://www.openstreetmap.org/#map=11/31.7883/-106.4987"
+            ],
+            [
+                "K2",
+                "",
+                "Karte der Eisenbahnübergänge Mexikos in die USA, Union Pacific de Mexico",
+                "https://www.up.com/customers/premium/de-mex/index.htm"
+            ],
+            [
+                "K3",
+                "",
+                "Karte der Good-Neigborr Bridge in Ciudad Juárez",
+                "https://www.openstreetmap.org/#map=17/31.74919/-106.48721"
+            ],
+            // Statistics
+            // divider
+            [
+                "",
+                "Statistiken",
+                "",
+                ""
+            ],
+            [
+                "S1",
+                "",
+                "US Imports from China (Goods) 1985-2020",
+                "https://www.geopoliticalmonitor.com/wp-content/uploads/2021/05/featured-4-768x369.jpg"
+            ],
+            [
+                "S2",
+                "",
+                "Trocken arides Klima (BWk) in Ciudad Juárez",
+                "https://de.climate-data.org/nordamerika/mexiko/chihuahua/ciudad-juarez-5300/"
+            ],
+            [
+                "S3",
+                "",
+                "Treemap der Exporte Mexikos in die USA, 2021",
+                "https://www.economia.gob.mx/datamexico/en/profile/country/estados-unidos"
+            ],
+            [
+                "S4",
+                "",
+                "Löhne in den USA, Mexiko und Maquiladoras 1992-2006",
+                "https://www.researchgate.net/figure/Hourly-compensation-costs-for-production-workers-in-motor-vehicle-and-parts-manufacturing_fig1_270796719"
+            ],
+            [
+                "S5",
+                "",
+                "Verteilung und Wachstum des Internationalen Handels in Mexiko 2021",
+                "https://www.economia.gob.mx/datamexico/en/profile/geo/mexico"
+            ],
+            [
+                "S6",
+                "",
+                "Annual Flow of Foreign Direct Investment from China to Mexico 2000-2022",
+                "https://www.economia.gob.mx/datamexico/en/profile/geo/mexico"
+            ],
+            [
+                "S7",
+                "",
+                "Bevölkerungspyramide von China 1980",
+                "https://www.populationpyramid.net/china/1980/"
+            ],
+            [
+                "S8",
+                "",
+                "Bevölkerungspyramide von Mexiko 2023",
+                "https://www.populationpyramid.net/mexico/"
+            ],
+    ]
+
+        function fill_sources() {
+            const sourcesList = document.querySelector('.sources-list');
+            sources.forEach(source => {
+                let [label, claim, text, link] = source;
+
+                const sourceElement = document.createElement("div");
+                sourceElement.classList.add("source");
+
+                const labelElement = document.createElement("span");
+                labelElement.textContent = label;
+                labelElement.classList.add("label");
+
+                const claimElement = document.createElement("span");
+                claimElement.textContent = claim;
+                claimElement.classList.add("claim");
+
+                const sourceLink = document.createElement("a");
+                sourceLink.href = link;
+                sourceLink.textContent = text;
+                sourceLink.target = "_blank";
+
+                sourcesList.appendChild(sourceElement);
+                sourceElement.appendChild(labelElement);
+                sourceElement.appendChild(claimElement);
+                sourceElement.appendChild(document.createElement("br"));
+                sourceElement.appendChild(sourceLink);
+                sourcesList.appendChild(document.createElement("br"));
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', fill_sources);
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById("project_name").textContent = project_name;
+        });
+    </script>
+
+    <style>
+        /*
+            Variables defined by colors.css:
+            --color-bg
+            --color-text
+            --color-primary
+            --color-hover
+            --color-border
+        */
+        html {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            margin: 0.5rem 1.5rem;
+        }
+
+        .sources-list {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .source {
+            color: var(--color-text);
+            padding: 0.5rem;
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+            text-decoration: none;
+        }
+
+        .source:hover {
+            background-color: var(--color-hover);
+        }
+
+        .label {
+            margin-right: 0.5rem;
+        }
+
+    </style>
+
+    <h1 id = "project_name"></h1>
+
+    <div class="sources-list">
+
+    </div>
+
+    <p class="copyright-notice">
+        Copyright © 2024 <a href="mailto:linus@linsh.org">Linus Horn</a>
+    </p>
+    
+</body>
+</html>
